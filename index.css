@@ -1,0 +1,30 @@
+.About-Us {
+    margin-top: 0px;
+}
+.About-Us .content {
+    display: flex;
+}
+.About-Us .content .About-Us-Left {
+    flex: 1;
+}
+.About-Us .content .About-Us-Left h2 {
+    font-size: 30px;
+}
+.About-Us .content .About-Us-Left p {
+    color: #888888;
+}
+.About-Us .content .About-Us-Left button {
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: #fff;
+    /* border-color: #fff; */
+      border: 2px solid white; 
+      padding: 10px 20px;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) ;
+}
+.About-Us .content .About-Us-Right {
+    flex: 1;
+}
+.About-Us .content .About-Us-Right .video {
+    border-radius: 20px;
+}
