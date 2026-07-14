@@ -1,0 +1,269 @@
+/* Định dạng chung */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-box img {
+  display: block;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+  padding: 8px 0;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #fe6019;
+}
+
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fe6019;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Định dạng cho Icon mũi tên mới */
+.arrow-icon {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 0;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+.nav-dropdown-list li a {
+  display: block;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.nav-dropdown-list li a:hover {
+  background-color: #f8fafc;
+  color: #fe6019;
+}
+
+.nav-dropdown:hover .nav-dropdown-list {
+  display: block;
+}
+
+.btn-signup {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1.5px solid #d1d5db; 
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-signup:hover {
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-actions {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.nav-toggle-btn {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .nav-toggle-btn {
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Định dạng kích thước cho nút đóng mở trên mobile */
+  .nav-toggle-btn i {
+    font-size: 22px;
+    color: #333333;
+  }
+  
+  .hide-btn {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
+
+  .nav-dropdown-list {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    padding-left: 15px;
+  }
+
+  .mobile-only {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-only .btn-signup {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .navbar-nav {
+    display: flex;
+  }
+
+  #nav-toggle:checked ~ .show-btn {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .hide-btn {
+    display: block;
+  }
+}
+
+/* ABOUT US */
+.About-Us {
+    margin-top: 0px;
+}
+.About-Us .content {
+    display: flex;
+}
+.About-Us .content .About-Us-Left {
+    flex: 1;
+}
+.About-Us .content .About-Us-Left h2 {
+    font-size: 30px;
+}
+.About-Us .content .About-Us-Left p {
+    color: #888888;
+}
+.About-Us .content .About-Us-Left button {
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: #fff;
+    /* border-color: #fff; */
+      border: 2px solid white; 
+      padding: 10px 20px;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) ;
+}
+.About-Us .content .About-Us-Right {
+    flex: 1;
+}
+.About-Us .content .About-Us-Right .video {
+    border-radius: 20px;
+}

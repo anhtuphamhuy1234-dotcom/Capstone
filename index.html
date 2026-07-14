@@ -4,13 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Pinwheel_Tailwind</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- Phúc -->
-    <section class="header"></section>
+    <section class="header">
+    <nav class="navbar container">
+    <div class="logo-box">
+      <a href="index.html">
+        <img src="./img/logo-Pin.svg" height="30" width="147" alt="logo" />
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label id="show-button" for="nav-toggle" class="nav-toggle-btn show-btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    
+    <label id="hide-button" for="nav-toggle" class="nav-toggle-btn hide-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </label>
+    
+    <ul id="nav-menu" class="navbar-nav">
+      <li class="nav-item">
+        <a href="" class="nav-link active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="blog.html" class="nav-link">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a href="features.html" class="nav-link">Features</a>
+      </li>
+      <li class="nav-item">
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+      </li>
+      
+      <li class="nav-dropdown">
+        <span class="nav-link dropdown-title">
+          Pages
+          <i class="fa-solid fa-chevron-down arrow-icon"></i>
+        </span>
+        <ul class="nav-dropdown-list">
+          <li><a href="career.html">Career</a></li>
+          <li><a href="career-single.html">Career Single</a></li>
+          <li><a href="integrations.html">Integrations</a></li>
+          <li><a href="integration-single.html">Integration Single</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="changelogs.html">Changelogs</a></li>
+          <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+        </ul>
+      </li>
+      
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item mobile-only">
+        <a class="btn-signup" href="signin.html">Sign Up Now</a>
+      </li>
+    </ul>
+    
+    <div class="nav-actions">
+      <a class="btn-signup" href="signin.html">Sign Up Now</a>
+    </div>
+    </nav>
+    </section>
     <section class="hero"></section>
     <section class="features"></section>
     <section class="reputation"></section>
