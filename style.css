@@ -96,7 +96,6 @@ ul {
   gap: 6px;
 }
 
-/* Định dạng cho Icon mũi tên mới */
 .arrow-icon {
   font-size: 11px;
   transition: transform 0.2s ease;
@@ -172,7 +171,6 @@ ul {
     cursor: pointer;
   }
 
-  /* Định dạng kích thước cho nút đóng mở trên mobile */
   .nav-toggle-btn i {
     font-size: 22px;
     color: #333333;
@@ -233,6 +231,78 @@ ul {
 
   #nav-toggle:checked~.hide-btn {
     display: block;
+  }
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-title {
+  font-family: 'Merriweather', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1e1e1e;
+  margin-bottom: 24px;
+}
+
+.hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #666666;
+  margin-bottom: 32px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-image {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 
