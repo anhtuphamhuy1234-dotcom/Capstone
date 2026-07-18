@@ -142,6 +142,7 @@ ul {
   border-radius: 50px;
   transition: all 0.2s ease;
   cursor: pointer;
+  border: none ;
 }
 
 .btn-signup:hover {
@@ -304,6 +305,13 @@ ul {
     width: 100%;
     margin-top: 30px;
   }
+}
+
+.hero-btn-download {
+  padding: 0.85rem 2.5rem !important;
+  font-size: 1.05rem !important;
+  border-radius: 9999px !important;
+  border: none ;
 }
 
 /* ABOUT US */
