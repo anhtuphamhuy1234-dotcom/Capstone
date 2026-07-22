@@ -273,11 +273,16 @@ ul {
   font-size: 1.05rem !important;
   border-radius: 9999px !important;
   border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
 }
 .features {
   position: relative;
   padding: 100px 0;
-  background-color: #f9fbfb;
+  background-color: transparent;
+  background-image: url('./img/background2.svg'), url('./img/background-khúc\ dưới.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: top left, center center;
+  background-size: auto, cover;
   overflow: hidden;
 }
 .features-container {
@@ -365,6 +370,7 @@ ul {
   padding: 60px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fafafa;
+  background-image: url(./img/background-khúc\ dưới.svg);
   color: #555;
   line-height: 1.6;
 }
@@ -442,6 +448,7 @@ ul {
 .payments {
   padding: 80px 0;
   background-color: #fafafa; 
+  background-image: url(./img/background-khúc\ dưới.svg);
 }
 .payments-content {
   display: flex;
