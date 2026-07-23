@@ -7,7 +7,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 body {
-  background-color: #ffffff;
+   background-color: #fafafa;
   background-image: url(./img/background-khúc\ dưới.svg);
   background-size: cover;
   background-position: center top;
@@ -771,7 +771,7 @@ ul {
 }
 .footer {
   padding: 100px 0 40px;
-  background: #f8f8f8;
+  background: #F4F4F4;
 }
 .footer .footer-content {
   display: flex;
